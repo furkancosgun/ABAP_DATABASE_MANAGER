@@ -236,7 +236,7 @@ CLASS lcl_view IMPLEMENTATION .
   ENDMETHOD.
 ENDCLASS.
 *----------------------------------------------------------------------*
-* CLASS lcl_view DEFINITION
+* CLASS lcl_controller DEFINITION
 *----------------------------------------------------------------------*
 CLASS lcl_controller  DEFINITION FINAL.
   PUBLIC SECTION.
@@ -248,6 +248,9 @@ CLASS lcl_controller  DEFINITION FINAL.
     DATA:_view  TYPE REF TO lcl_view.
     DATA:_model TYPE REF TO lcl_model.
 ENDCLASS.
+*----------------------------------------------------------------------*
+* CLASS lcl_controller IMPLEMENTATION
+*----------------------------------------------------------------------*
 CLASS lcl_controller  IMPLEMENTATION.
   METHOD:constructor.
     _view  = NEW lcl_view( ).
