@@ -1,72 +1,35 @@
 # ABAP DATABASE MANAGER
-## Türkçe README
 
-### Amaç
-Bu proje, SAP ABAP dilinde yazılmış bir SQL sorgu uygulamasını içerir. Bu uygulama, SAP sistemi içindeki veya dışarıdaki veritabanlarına istenen SQL sorgularını işler ve sonuçları kullanıcılara sunar, SQL Server Management Studio gibi bir arayüz sağlar.
+**A custom SQL query application for SAP ABAP, enabling management of both internal and external databases.**
 
-### İşlevler:
-- SQL sorgularını çalıştırma
-- Veritabanından veri alma
-- Veritabanına veri ekleme ve güncelleme
-- Veritabanındaki verileri silme
+## Project Overview
 
-### Kullanım
-Proje dosyalarını yerel bir ABAP geliştirme ortamına aktarın ve uygulamayı çalıştırmak için gerekli adımları izleyin.
+`zabap_p_database_manager` is an SQL query application written in SAP ABAP that allows users to connect to and interact with databases within SAP or external databases. This flexibility provides a seamless interface for database management, similar to SQL Server Management Studio, directly from the ABAP environment.
 
-### Katkıda Bulunma
-Eğer projeye katkıda bulunmak isterseniz, lütfen bir çekme isteği (pull request) gönderin veya sorunlar (issues) ekleyin.
+## Purpose
 
+The project facilitates database management by allowing users to:
+- Run SQL queries on both the default SAP database and external databases.
+- Retrieve, add, update, and delete data across connected databases.
 
-## English README
-This project contains an SQL query application written in SAP ABAP language. This application processes requested SQL queries against databases within or outside the SAP system and provides results to users, offering an interface similar to SQL Server Management Studio.
+## Functionalities
 
-### Purpose
-This project includes an SQL query application written in SAP ABAP language. The application processes SQL queries requested for databases within or outside the SAP system and presents the results to users, providing an interface similar to SQL Server Management Studio.
+- **Flexible Database Connection**: Connect to either the SAP system's default database or an external database using the provided connection interface.
+- **Executing SQL Queries**: Run custom SQL queries on the connected database.
+- **Data Retrieval**: Display query results in an ALV (ABAP List Viewer) format for easy analysis.
+- **Data Modification**: Insert, update, or delete data within the connected database.
+- **Error Handling**: User-friendly messages for missing queries, connection issues, and query results.
 
-### Functionalities:
-Executing SQL queries
-Retrieving data from databases
-Adding and updating data in the database
-Deleting data from the database
+## Usage
 
-### Usage
-To run the application, transfer the project files to a local ABAP development environment and follow the necessary steps.
+1. **Setup**: Transfer the project files into your local ABAP development environment.
+2. **Run the Application**: Execute the report `zabap_p_database_manager` and specify either the default SAP database or an external connection name.
+3. **Execute SQL Commands**: Use the interface to connect and run SQL queries on the chosen database.
 
-### Contributing
-If you would like to contribute to the project, please submit a pull request or add issues.
+## Requirements
 
-## Screenshot
-<table>
-  <tr>
-    <td>
-      <img src="https://github.com/furkancosgun/ABAP_DATABASE_MANAGER/blob/main/ZXFC_DBMANAGER/ss/ss1.png?raw=true" />
-    </td>
-    <td>
-      <img src="https://github.com/furkancosgun/ABAP_DATABASE_MANAGER/blob/main/ZXFC_DBMANAGER/ss/ss2.png?raw=true" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      NORMAL QUERY
-    </td>
-    <td align="center">
-      COUNT QUERY
-    </td>
-  <tr>
-    <td>
-      <img src="https://github.com/furkancosgun/ABAP_DATABASE_MANAGER/blob/main/ZXFC_DBMANAGER/ss/ss3.png?raw=true" />
-    </td>
-    <td>
-      <img src="https://github.com/furkancosgun/ABAP_DATABASE_MANAGER/blob/main/ZXFC_DBMANAGER/ss/ss4.png?raw=true" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      INNER QUERY
-    </td>
-    <td align="center">
-      INNER + DISTINCT QUERY
-    </td>
-  </tr>
-</table>
+- **SAP ABAP System**: Access to an SAP environment, with permissions for executing SQL queries on both internal and external databases.
 
+## Contributing
+
+We welcome contributions to enhance the project! Feel free to submit a pull request or add issues for suggestions, bug reports, or new features.
